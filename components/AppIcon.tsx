@@ -3,7 +3,7 @@
 interface AppIconProps {
   app: {
     name: string;
-    icon: string;
+    icon?: string;
   };
   onClick: () => void;
 }

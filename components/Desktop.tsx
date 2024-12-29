@@ -12,6 +12,7 @@ export interface App {
   id: string;
   name: string;
   url: string;
+  component: string;
 }
 
 interface DesktopProps {
@@ -30,7 +31,8 @@ export default function Desktop({ onLock }: DesktopProps) {
       setApps([...apps, {
         id: Date.now().toString(),
         name,
-        url
+        url,
+        component: ""
       }]);
     }
   };
